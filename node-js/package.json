@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "jsonwebtoken": "^8.5.1",
-    "moment": "^2.29.1"
+    "moment": "^2.29.4"
   }
 }
