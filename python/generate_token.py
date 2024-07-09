@@ -1,5 +1,4 @@
-from datetime import datetime
-from datetime import timedelta
+from datetime import datetime, timedelta, timezone
 import base64
 import hmac
 import hashlib
@@ -20,7 +19,8 @@ def generate_jwt():
             )
             return
 
-        curr_time = datetime.utcnow()
+        # Get the current UTC time as a timezone-aware datetime object
+        curr_time = datetime.now(timezone.utc)
         payload = {
             "aud": aud_url,
             "iat": curr_time,

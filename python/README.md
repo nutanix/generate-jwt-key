@@ -3,7 +3,7 @@
 1. Install dependencies (in virtualenv)
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 2. Export API_KEY, KEY_ID & AUD_URL
